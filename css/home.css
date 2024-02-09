@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+nav {
+    padding: 15px; 
+    height: 100vh;
+    min-width: 300px;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.nav-header-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px !important;    
+}
+
+.nav-header {
+    font-size: x-large;
+    font-weight: 600;
+    transform: translateY(-4px);
+}
+
+nav .nav-item {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+nav .nav-item img {
+    width: 1.3rem;
+}
+
+nav .nav-item .nav-text {
+    height: 1.5rem;
+    margin-left: 15px;
+}
+
+nav .found-container {
+    background-color: rgb(235, 235, 235);
+}
+
+nav .lost-container {
+    margin-bottom: 23px;
+}
+
+nav .about-container {
+    margin-top: 23px;
+}
+
+main .main-container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* display: none; */
+}
+
+main .search-container {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    width: 70%;
+}
+
+main .search-bar,
+main .new-entry {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(8, 8, 8, .5);
+    border-radius: 50px;
+}
+
+main .search-text {
+    opacity: 70%;
+    border: none;
+    outline: none;
+    font-size: large;
+    width: 100%;
+    padding-right: 15px;
+}
+
+main .search-text::-webkit-search-cancel-button {
+    display: none;
+}
+
+main img {
+    width: 17px;
+    opacity: 70%;
+}
+
+main .search-bar {
+    width: 75%;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main .search-bar img {
+    margin-right: 18px;
+}
+
+main .new-entry {
+    width: 25%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+main .new-entry img {
+    margin-left: 20px;
+    margin-right: 10%;
+}
+
+main .found-content-container {
+    border-radius: 20px;
+    width: 100%;
+    padding: 40px 15%;
+    height: calc(100vh - 90px);
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    overflow: auto;
+    padding-bottom: 240px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    /* background: rgb(237, 237, 237);     */
+}
+
+main .item-container {
+    border-radius: 10px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+main .item-image-container {
+    aspect-ratio: 1 / 1.05;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+main .item-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+main .item-details {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding-top: 15px;
+}
+
+main .item-details .item-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+main .item-details span:not(.item-title) {
+    color: rgb(60, 60, 60);
+    font-size: medium;
+}
+
+main .item-container:hover .item-image {
+    transform: scale(1.03);
+}
+
+@media only screen and (max-width: 1320px)  {
+    main .search-text {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 1280px)  {
+    nav {
+        min-width: 200px !important;
+    }
+
+    main .found-content-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    main .search-container {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 1100px)  {
+    nav {
+        display: none;
+    }
+
+    main .new-entry-text {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 980px)  {
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 870px)  {
+    main .new-entry-text {
+        font-size: small;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(227, 227, 227);
+    border-radius: 50px;
+}
