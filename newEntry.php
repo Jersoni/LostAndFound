@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lost n Found</title>
-    <link rel="stylesheet" href="../lostandfound/css/newEntry.css">
+    <!-- <link rel="stylesheet" href="../lostandfound/css/newEntry.css"> -->
+    <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <nav>
+    <nav class="bg-red-800 underline">
+        hif
         <div class="nav-item nav-header-container">
             <img src="assets/menu.jpg" style="height: 20px;">
             <span class="nav-text nav-header">Jersey</span class="menu-header">

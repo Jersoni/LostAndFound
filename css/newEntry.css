@@ -13,8 +13,7 @@ body {
 
 nav {
     padding: 15px; 
-    height: 100vh;
-    min-width: 300px !important;    
+    height: 100vh;  
 }
 
 .nav-header-container {
@@ -26,7 +25,6 @@ nav {
 .nav-header {
     font-size: x-large;
     font-weight: 600;
-    transform: translateY(-4px);
 }
 
 nav .nav-item {
@@ -173,10 +171,6 @@ button {
 }
 
 @media only screen and (max-width: 1280px)  {
-    nav {
-        min-width: 200px !important;
-    }
-
     main .found-content-container {
         padding-left: 10%;
         padding-right: 10%;
@@ -188,18 +182,10 @@ button {
 }
 
 @media only screen and (max-width: 1100px)  {
-    nav {
-        display: none;
-    }
+
 
     main .new-entry-text {
         font-size: medium;
-    }
-}
-
-@media only screen and (max-width: 980px)  {
-    nav {
-        display: none;
     }
 }
 
